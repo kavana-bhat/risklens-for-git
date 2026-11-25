@@ -1,0 +1,97 @@
+{
+  "rows": 6129,
+  "repos": [
+    "click",
+    "httpx",
+    "itsdangerous",
+    "markupsafe",
+    "requests",
+    "werkzeug"
+  ],
+  "defect_rate": 0.0628,
+  "features": [
+    "files_changed",
+    "insertions",
+    "deletions",
+    "entropy",
+    "author_exp",
+    "functions_changed",
+    "affected_files",
+    "blast_radius"
+  ],
+  "chronological_cv": {
+    "lines changed only": {
+      "roc_auc": 0.777,
+      "pr_auc": 0.236,
+      "recall_at_top20pct": 0.576
+    },
+    "Kamei-style change metrics": {
+      "roc_auc": 0.794,
+      "pr_auc": 0.269,
+      "recall_at_top20pct": 0.577
+    },
+    "this project (+ function-level)": {
+      "roc_auc": 0.872,
+      "pr_auc": 0.367,
+      "recall_at_top20pct": 0.668
+    }
+  },
+  "leave_one_repo_out": {
+    "baseline (Kamei-style)": {
+      "click": {
+        "roc_auc": 0.721,
+        "recall_at_top20pct": 0.447
+      },
+      "httpx": {
+        "roc_auc": 0.773,
+        "recall_at_top20pct": 0.487
+      },
+      "itsdangerous": {
+        "roc_auc": 0.711,
+        "recall_at_top20pct": 0.455
+      },
+      "markupsafe": {
+        "roc_auc": 0.773,
+        "recall_at_top20pct": 0.579
+      },
+      "requests": {
+        "roc_auc": 0.811,
+        "recall_at_top20pct": 0.686
+      },
+      "werkzeug": {
+        "roc_auc": 0.768,
+        "recall_at_top20pct": 0.537
+      }
+    },
+    "this project": {
+      "click": {
+        "roc_auc": 0.851,
+        "recall_at_top20pct": 0.596
+      },
+      "httpx": {
+        "roc_auc": 0.855,
+        "recall_at_top20pct": 0.662
+      },
+      "itsdangerous": {
+        "roc_auc": 0.842,
+        "recall_at_top20pct": 0.576
+      },
+      "markupsafe": {
+        "roc_auc": 0.887,
+        "recall_at_top20pct": 0.842
+      },
+      "requests": {
+        "roc_auc": 0.885,
+        "recall_at_top20pct": 0.843
+      },
+      "werkzeug": {
+        "roc_auc": 0.838,
+        "recall_at_top20pct": 0.583
+      }
+    }
+  },
+  "thresholds": {
+    "medium": 0.12334728976160862,
+    "high": 0.22852211978481335
+  }
+}
